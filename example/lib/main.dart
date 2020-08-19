@@ -5,6 +5,8 @@ import 'package:flutter/services.dart';
 import 'package:userleap_flutter/userleap_flutter.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized(); 
+   UserleapFlutter.configure('');
   runApp(MyApp());
 }
 
@@ -49,8 +51,48 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: const Text('Plugin example app'),
         ),
-        body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: FlatButton(
+                  onPressed: () {
+                    UserleapFlutter.presentDebugSurvey();
+                  },
+                  child: Text('presentDebugSurvey')),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: FlatButton(
+                  onPressed: () {
+                    UserleapFlutter.setUserIdentifier('yfbays7dbfsfgyb');
+                  },
+                  child: Text('setUserIdentifier')),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: FlatButton(
+                  onPressed: () {
+                    UserleapFlutter.setEmailAddress('ekeh.wisdom@gmail.com');
+                  },
+                  child: Text('setEmailAddress')),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: FlatButton(
+                  onPressed: () {
+                    UserleapFlutter.setVisitorAttribute('gender', 'male');
+                  },
+                  child: Text('setVisitorAttribute')),
+            ),
+            
+            
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text('Running on: $_platformVersion\n'),
+            ),
+          ],
         ),
       ),
     );
