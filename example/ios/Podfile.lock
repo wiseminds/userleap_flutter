@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - userleap_flutter (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - userleap_flutter (from `.symlinks/plugins/userleap_flutter/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  userleap_flutter:
+    :path: ".symlinks/plugins/userleap_flutter/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  userleap_flutter: 51e663b8e706bd37ecb4ca02784f029d6792d34f
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.9.3
