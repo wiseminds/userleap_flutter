@@ -5,6 +5,10 @@
 
 A Flutter plugin integrating the official android and ios SDK for Userleap Survey Platform
 
+<p align="center">
+  <img src="https://github.com/wiseminds/userleap_flutter/raw/master/screenshot.png" alt="Screenshot" />
+</p>
+
 
 ## Usage
 
