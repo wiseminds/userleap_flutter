@@ -1,15 +1,69 @@
 # userleap_flutter
 
-A new flutter plugin project.
 
-## Getting Started
+[![pub package](https://img.shields.io/badge/Pub-0.0.1-green.svg)](https://pub.dartlang.org/packages/url_launcher)
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+A Flutter plugin integrating the official android and ios SDK for Userleap Survey Platform
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p align="center">
+  <img src="https://github.com/wiseminds/userleap_flutter/raw/master/screenshot.png" alt="Screenshot" />
+</p>
 
+
+## Usage
+
+Import `package:userleap_flutter/userleap_flutter.dart` and use the methods in `UserleapFlutter` class.
+
+
+
+Example:
+```dart
+import 'package:userleap_flutter/userleap_flutter.dart';
+
+void main() async {
+    UserleapFlutter.configure('ENVIRONMENT_ID');
+    runApp(App());
+}
+
+class App extends StatelessWidget {
+
+    @override
+    Widget build(BuildContext context) {
+        return Center(
+            child: FlatButton(
+                onPressed: () {
+                UserleapFlutter.presentDebugSurvey()
+                .then((value) => print(value));
+            },
+            child: Text('Present Debug Survey'),
+        ));
+    }
+}
+
+```
+
+
+See Userleap Android and iOS package documentation for more information.
+[`USerleap docs`](https://docs.userleap.com/installation/)
+
+
+Userleap requires a Fragment Activity for the android implementation to work, im your MainActivity.kt, you can change FlutterActivity to FlutterFragmentActivity.
+
+```
+import android.os.Bundle
+import androidx.annotation.NonNull
+import io.flutter.embedding.engine.FlutterEngine
+import io.flutter.embedding.android.FlutterFragmentActivity
+import io.flutter.plugins.GeneratedPluginRegistrant
+
+
+class MainActivity: FlutterFragmentActivity() {
+    override fun configureFlutterEngine(@NonNull flutterEngine: FlutterEngine) {
+        GeneratedPluginRegistrant.registerWith(flutterEngine)
+    }
+
+}
+
+```
+
+checkout the example project for full implementation

@@ -1,10 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wiseminds.userleap_flutter_example">
-      <uses-sdk tools:overrideLibrary="com.userleap" />
+      
     <application
         android:name="io.flutter.app.FlutterApplication"
         android:label="userleap_flutter_example"
         android:icon="@mipmap/ic_launcher">
+
+        
+
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

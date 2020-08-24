@@ -206,11 +206,13 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh",
 				"${PODS_ROOT}/../Flutter/Flutter.framework",
+				"${PODS_ROOT}/../.symlinks/plugins/userleap_flutter/ios/UserLeapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/userleap_flutter/userleap_flutter.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UserLeapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/userleap_flutter.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
