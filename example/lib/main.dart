@@ -4,7 +4,7 @@ import 'package:userleap_flutter/userleap_flutter.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  UserleapFlutter.configure('mNr0teXKk');
+  UserleapFlutter.configure('ENVIRONMENT_ID');
   runApp(MyApp());
 }
 
@@ -62,6 +62,17 @@ class _MyAppState extends State<MyApp> {
                                     content: Text(value?.toString() ?? ''))));
                       },
                       child: Text('setEmailAddress')),
+                ),
+                 Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: FlatButton(
+                      onPressed: () {
+                        UserleapFlutter.displaySurveyWithId(2708)
+                            .then((value) => Scaffold.of(context).showSnackBar(
+                                SnackBar(
+                                    content: Text(value?.toString() ?? ''))));
+                      },
+                      child: Text('display survey with id')),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),

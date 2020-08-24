@@ -44,14 +44,37 @@ public class SwiftUserleapFlutterPlugin: NSObject, FlutterPlugin {
             UserLeap.shared.track(eventName: event) { state in
                     switch state {
                         case .ready:
-                             result("Survey ready")
+                             result("READY")
                             let viewController: UIViewController =
                             (UIApplication.shared.delegate?.window??.rootViewController)!;
                             UserLeap.shared.presentSurvey(from: viewController)
-                        case .noSurvey, .disabled:
+                    case .noSurvey:
+                        result("NO_SURVEY")
+                    case .disabled:
+                        result("DISABLED")
                             break
                 }
             }
+        }
+         case "displaySurveyWithId":
+            if let id = arguments?["id"] as? Int {
+                  let viewController: UIViewController =
+                            (UIApplication.shared.delegate?.window??.rootViewController)!;
+            UserLeap.shared.presentSurvey(withId: id, from: viewController) 
+            // { state in
+            //         switch state {
+            //             case .ready:
+            //                  result("READY")
+            //                 let viewController: UIViewController =
+            //                 (UIApplication.shared.delegate?.window??.rootViewController)!;
+            //                 UserLeap.shared.presentSurvey(from: viewController)
+            //         case .noSurvey:
+            //             result("NO_SURVEY")
+            //         case .disabled:
+            //             result("DISABLED")
+            //                 break
+            //     }
+            // }
         }
         case "presentDebugSurvey":
             let viewController: UIViewController =

@@ -33,6 +33,14 @@ class UserleapFlutter {
       print(e);
     }
   }
+   static Future displaySurveyWithId(int id) async {
+    try {
+      return await _channel
+          .invokeMethod(Channels.DISPLAY_WITH_ID, {'id': id});
+    } catch (e) {
+      print(e);
+    }
+  }
 
   static Future setVisitorAttribute(String key, String value) async {
     return await _channel.invokeMethod(

@@ -49,6 +49,12 @@ class UserleapFlutterPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
               result.success("Sent email to Userleap")
             }
           }
+           "displaySurveyWithId" -> {
+            call.argument<String>("id")?.let {
+//              UserLeap.setEmailAddress(call.argument<String>("email")!!)
+              result.success("This feature is not yet available on android")
+            }
+          }
           "logout" ->  UserLeap.logout()
           "presentDebugSurvey" ->  UserLeap.presentDebugSurvey(mActivity)
           "setVisitorAttribute" ->  UserLeap.setVisitorAttribute(call.argument<String>("key")!!,
