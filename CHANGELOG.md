@@ -1,3 +1,5 @@
+## 0.0.3
+Edited pod file
 ## 0.0.2
 Added comments to all methods used
 ## 0.0.1
