@@ -12,7 +12,7 @@ public class SwiftUserleapFlutterPlugin: NSObject, FlutterPlugin {
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
 //    result("iOS " + UIDevice.current.systemVersion)
     let method = call.method
-    var arguments = call.arguments as? NSDictionary
+    let arguments = call.arguments as? NSDictionary
     
     switch method {
        case "configure":
