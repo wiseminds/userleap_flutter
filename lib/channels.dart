@@ -1,3 +1,4 @@
+/// A list of all plattform channels implemented in this plugin
 class Channels {
   static const CONFIGURE = 'configure';
   static const PRESENT_DEBUG_SURVEY = 'presentDebugSurvey';
