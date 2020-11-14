@@ -4,7 +4,7 @@ import 'package:userleap_flutter/userleap_flutter.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  UserleapFlutter.configure('mNr0teXKk'??'ENVIRONMENT_ID');
+  UserleapFlutter.configure('ENVIRONMENT_ID');
   runApp(MyApp());
 }
 
