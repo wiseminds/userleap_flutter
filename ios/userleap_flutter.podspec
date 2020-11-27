@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'userleap_flutter'
-  s.version          = '0.0.1'
+  s.version          = '0.0.5'
   s.summary          = 'A flutter plugin for userleap'
   s.description      = <<-DESC
 A new flutter plugin project.
@@ -12,14 +12,17 @@ A new flutter plugin project.
   s.homepage         = 'http://example.com'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Your Company' => 'ekeh.wisdom@gmail.com' }
-  s.source           = { :path => '.' }
+  s.source = {
+    :git => 'https://github.com/wiseminds/userleap_flutter.git',
+    :tag => s.version
+  } 
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
   s.framework = 'UserLeapKit'
   s.platform = :ios, '8.0'
 
 #   Flutter.framework does not contain a i386 slice. Only x86_64 simulators are supported.
-   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
+  #  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
    s.swift_version = '5.0'
    s.xcconfig = { 'OTHER_LDFLAGS' => '-framework UserLeapKit' }
    s.vendored_frameworks = 'UserLeapKit.framework'
