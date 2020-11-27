@@ -1,3 +1,5 @@
+## 0.0.5
+Fixed issues with building for some devices on iOS
 ## 0.0.4
 Upgraded userleap android sdk from v1.0.1 to v1.1.2
 Upgraded userleap iOS sdk from to 3.1.0
