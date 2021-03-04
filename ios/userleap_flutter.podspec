@@ -18,13 +18,14 @@ A new flutter plugin project.
   } 
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
-  s.framework = 'UserLeapKit'
-  s.platform = :ios, '8.0'
+  # s.framework = 'UserLeapKit'
+  s.platform = :ios, '10.3'
+  s.dependency 'UserLeapKit', '~>4.1.0'
 
 #   Flutter.framework does not contain a i386 slice. Only x86_64 simulators are supported.
-  #  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
+   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
    s.swift_version = '5.0'
    s.xcconfig = { 'OTHER_LDFLAGS' => '-framework UserLeapKit' }
-   s.vendored_frameworks = 'UserLeapKit.framework'
+  #  s.vendored_frameworks = 'UserLeapKit.framework'
 
 end

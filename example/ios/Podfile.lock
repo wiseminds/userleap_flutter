@@ -1,11 +1,17 @@
 PODS:
   - Flutter (1.0.0)
-  - userleap_flutter (0.0.1):
+  - userleap_flutter (0.0.5):
     - Flutter
+    - UserLeapKit (~> 4.1.0)
+  - UserLeapKit (4.1.0)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
   - userleap_flutter (from `.symlinks/plugins/userleap_flutter/ios`)
+
+SPEC REPOS:
+  trunk:
+    - UserLeapKit
 
 EXTERNAL SOURCES:
   Flutter:
@@ -15,8 +21,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  userleap_flutter: ed8643f4e2f4f697938d4019e776727fd4763f96
+  userleap_flutter: 98e3309bd8b604d83996691bf3a34cfaf402afa0
+  UserLeapKit: af7f75bfc61af29ef6a42a1a96e95e996e14f54b
 
-PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+PODFILE CHECKSUM: 33f74cf6f4e5775ad35ae5df4008ad34eb3f5e59
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.0

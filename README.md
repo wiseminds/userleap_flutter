@@ -1,7 +1,7 @@
 # userleap_flutter
 
 
-[![pub package](https://img.shields.io/badge/Pub-0.0.1-green.svg)](https://pub.dartlang.org/packages/url_launcher)
+[![pub package](https://img.shields.io/badge/Pub-0.0.1-green.svg)](https://pub.dartlang.org/packages/userleap_flutter)
 
 A Flutter plugin integrating the official android and ios SDK for Userleap Survey Platform
 
@@ -64,6 +64,21 @@ class MainActivity: FlutterFragmentActivity() {
 
 }
 
+```
+
+Add Java 8 support to your project (if not added already)
+``` 
+android {
+    ...
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    // For Kotlin projects
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
 ```
 
 checkout the example project for full implementation

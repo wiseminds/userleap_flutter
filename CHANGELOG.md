@@ -1,3 +1,5 @@
+## 0.0.6
+upgraded Android SDK to `2.0.0`, and iOS SDK to `4.1.0`
 ## 0.0.5
 Fixed issues with building for some devices on iOS
 ## 0.0.4
