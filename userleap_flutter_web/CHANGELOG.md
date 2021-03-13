@@ -1,3 +1,7 @@
+## 0.0.6
+- upgraded interface version
+## 0.0.5
+- implementing web inteface
 ## 0.0.4
 - implementing web inteface
 ## 0.0.3

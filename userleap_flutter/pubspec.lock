@@ -153,14 +153,14 @@ packages:
       name: userleap_flutter_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.0.3"
+    version: "0.0.4"
   userleap_flutter_web:
     dependency: "direct main"
     description:
       name: userleap_flutter_web
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.0.4"
+    version: "0.0.5"
   vector_math:
     dependency: transitive
     description:

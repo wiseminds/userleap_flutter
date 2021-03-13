@@ -160,21 +160,21 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "0.1.0"
+    version: "0.1.2"
   userleap_flutter_platform_interface:
     dependency: transitive
     description:
       name: userleap_flutter_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.0.3"
+    version: "0.0.4"
   userleap_flutter_web:
     dependency: transitive
     description:
       name: userleap_flutter_web
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.0.4"
+    version: "0.0.5"
   vector_math:
     dependency: transitive
     description:

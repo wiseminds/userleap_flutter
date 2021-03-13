@@ -1,6 +1,6 @@
 name: userleap_flutter
 description: A flutter plugin for userleap https://app.userleap.com/. 
-version: 0.1.0
+version: 0.1.2
 homepage: https://github.com/wiseminds/userleap_flutter
 
 environment:
@@ -10,8 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  userleap_flutter_platform_interface: ^0.0.3
-  userleap_flutter_web: ^0.0.4
+  userleap_flutter_platform_interface: ^0.0.4
+  userleap_flutter_web: ^0.0.5
 
 dev_dependencies:
   flutter_test:

@@ -1,3 +1,5 @@
+## [0.0.4] - [13-03-2021]
+- upgrading implementation for web
 ## [0.0.3] - [13-03-2021]
 -  extracted channel instance to [Channels] class
 ## [0.0.2] - [13-03-2021]

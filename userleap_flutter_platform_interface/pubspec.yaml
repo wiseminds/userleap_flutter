@@ -1,6 +1,6 @@
 name: userleap_flutter_platform_interface
 description:  A common platform interface for the userleap_flutter plugin.
-version: 0.0.3
+version: 0.0.4
 repository: https://github.com/wiseminds/userleap_flutter
 
 environment:
