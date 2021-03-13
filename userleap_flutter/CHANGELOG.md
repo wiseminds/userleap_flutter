@@ -1,3 +1,7 @@
+## 0.1.4
+edited kotlin plugin
+## 0.1.3
+- formated code with dart formatter
 ## 0.1.2
 - upgraded dependencies version
 ## 0.1.1

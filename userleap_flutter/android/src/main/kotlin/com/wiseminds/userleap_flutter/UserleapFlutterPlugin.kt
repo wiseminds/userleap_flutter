@@ -15,10 +15,14 @@ import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 
-const val TAG = "UserleapFlutterPlugin"
+// const val TAG = "UserleapFlutterPlugin"
 
 /** UserleapFlutterPlugin */
 class UserleapFlutterPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
+
+    companion object {
+    const val TAG = "UserleapFlutterPlugin"
+  }
 
   /// The MethodChannel that will the communication between Flutter and native Android
   ///
