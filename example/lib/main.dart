@@ -33,20 +33,20 @@ class _MyAppState extends State<MyApp> {
               children: [
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: FlatButton(
+                  child: TextButton(
                       onPressed: () {
                         UserleapFlutter.presentDebugSurvey().then((value) =>
-                            Scaffold.of(context).showSnackBar(SnackBar(
+                            ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                                 content: Text(value?.toString() ?? ''))));
                       },
                       child: Text('presentDebugSurvey')),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: FlatButton(
+                  child: TextButton(
                       onPressed: () {
                         UserleapFlutter.setUserIdentifier('ekeh.wisdom@gmail.com')
-                            .then((value) => Scaffold.of(context).showSnackBar(
+                            .then((value) => ScaffoldMessenger.of(context).showSnackBar(
                                 SnackBar(
                                     content: Text(value?.toString() ?? ''))));
                       },
@@ -54,10 +54,10 @@ class _MyAppState extends State<MyApp> {
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: FlatButton(
+                  child: TextButton(
                       onPressed: () {
                         UserleapFlutter.setEmailAddress('ekeh.wisdom@gmail.com')
-                            .then((value) => Scaffold.of(context).showSnackBar(
+                            .then((value) => ScaffoldMessenger.of(context).showSnackBar(
                                 SnackBar(
                                     content: Text(value?.toString() ?? ''))));
                       },
@@ -65,10 +65,10 @@ class _MyAppState extends State<MyApp> {
                 ),
                  Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: FlatButton(
+                  child: TextButton(
                       onPressed: () {
                         UserleapFlutter.displaySurveyWithId(3200)
-                            .then((value) => Scaffold.of(context).showSnackBar(
+                            .then((value) => ScaffoldMessenger.of(context).showSnackBar(
                                 SnackBar(
                                     content: Text(value?.toString() ?? ''))));
                       },
@@ -76,10 +76,10 @@ class _MyAppState extends State<MyApp> {
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: FlatButton(
+                  child: TextButton(
                       onPressed: () {
                         UserleapFlutter.setVisitorAttribute('gender', 'male')
-                            .then((value) => Scaffold.of(context).showSnackBar(
+                            .then((value) => ScaffoldMessenger.of(context).showSnackBar(
                                 SnackBar(
                                     content: Text(value?.toString() ?? ''))));
                       },
@@ -87,21 +87,21 @@ class _MyAppState extends State<MyApp> {
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: FlatButton(
+                  child: TextButton(
                       onPressed: () {
                         UserleapFlutter.track('login')
-                            .then((value) => Scaffold.of(context).showSnackBar(
+                            .then((value) => ScaffoldMessenger.of(context).showSnackBar(
                                 SnackBar(
-                                    content: Text(value?.toString() ?? ''))));
+                                    content: Text(value.toString()))));
                       },
                       child: Text('track event')),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: FlatButton(
+                  child: TextButton(
                       onPressed: () {
                         UserleapFlutter.logout().then((value) =>
-                            Scaffold.of(context).showSnackBar(SnackBar(
+                        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                                 content: Text(value?.toString() ?? ''))));
                       },
                       child: Text('logout')),

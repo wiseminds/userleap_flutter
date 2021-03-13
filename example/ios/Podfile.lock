@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/userleap_flutter/ios"
 
 SPEC CHECKSUMS:
-  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
   userleap_flutter: 98e3309bd8b604d83996691bf3a34cfaf402afa0
   UserLeapKit: af7f75bfc61af29ef6a42a1a96e95e996e14f54b
 
