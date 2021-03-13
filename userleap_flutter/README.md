@@ -81,4 +81,6 @@ android {
 }
 ```
 
+Web support is currently in progress
+
 checkout the example project for full implementation

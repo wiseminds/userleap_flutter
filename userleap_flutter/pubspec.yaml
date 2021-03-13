@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   userleap_flutter_platform_interface: ^0.0.3
-  userleap_flutter_web: ^0.0.3
+  userleap_flutter_web: ^0.0.4
 
 dev_dependencies:
   flutter_test:
