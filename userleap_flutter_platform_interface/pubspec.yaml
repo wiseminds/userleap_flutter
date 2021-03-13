@@ -1,0 +1,19 @@
+name: userleap_flutter_platform_interface
+description:  A common platform interface for the userleap_flutter plugin.
+version: 0.0.3
+repository: https://github.com/wiseminds/userleap_flutter
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=2.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
