@@ -9,13 +9,12 @@ import 'package:flutter/services.dart';
 import 'channels.dart';
 import 'userleap_flutter_platform_interface.dart';
 
-const MethodChannel _channel =
-    MethodChannel(Channels.CHANNEL);
+const MethodChannel _channel = MethodChannel(Channels.CHANNEL);
 
 /// An implementation of [UrlLauncherPlatform] that uses method channels.
 class MethodChannelUserleapPlugin extends UserleapFlutterPlatform {
-   bool get isPluginInitialized => _isPluginInitialized;
-   bool _isPluginInitialized = false;
+  bool get isPluginInitialized => _isPluginInitialized;
+  bool _isPluginInitialized = false;
   @override
   Future configure(String environmentId) async {
     await _channel.invokeMethod(Channels.CONFIGURE, {'env': environmentId});
