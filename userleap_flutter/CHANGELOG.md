@@ -1,3 +1,5 @@
+## 0.1.5
+updaded android sdk to v2.1.3
 ## 0.1.4
 edited kotlin plugin
 ## 0.1.3
